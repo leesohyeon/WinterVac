@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>   </title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      #wrapper{
+        width: 320px;
+        margin:0 auto;
+      }
+      h1{
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #imagebox{
+        width:100px;
+      }
+      .box{
+        width: 320px;
+        height: 180px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+      }
+      .img1{background: ##ff9a00;}
+      .img2{background: ##0094ff;}
+      .img3{background: ##ff0062;}
+      .img4{background: ##4cff00;}
+
+      @media all and(min-width:768px;){
+        #wrapper{
+          width: 768px;
+        }
+        #img-box{
+          display: flex;
+          -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-wrap: row;
+          -webkit-flex-wrap: row;
+          flex-wrap: row;
+          justify-content: : space-around;
+        }
+      }
+      .box{
+        width: 47%;
+        margin: 0.5%
+      }
+      @media all and(min -width: 1024px;){
+        #wrapper{
+          width: 1024px;
+        }
+        .box{
+          width: 22px;
+          margin:0.5%;
+        }
+      }
+      </style>
+  </head>
+  <body>
+    <div id="img-box">
+      <h1>반응형 웹디자인</h1>
+      <div class="box img1"> </div>
+      <div class="box img2"> </div>
+      <div class="box img3"> </div>
+      <div class="box img4"> </div>
+    </div>
+  </body>
+</html>
